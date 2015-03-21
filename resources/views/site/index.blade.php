@@ -61,16 +61,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-            </div>
-            <div class="col-lg-4">
-                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>This is concept app meant created during the API coLAB - Hack Day on 21 Mar 2015. This hack was produced within 6 hours to demonstrate the integration with SkyScanner API. Below is the 2-minute demonstration speech for reference.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline">
-                    <i class="fa fa-download"></i> Download Theme
-                </a>
+                <p>"Anyone here uses Tinder?" I'm sure the rest of you are too shy to own up but it's all good. I myself an "not" using Tinder.</p>
+                <p>Everybody loves to travel. Especially so fo Singaporeans. You know this is true when you own government made an official announcement not to travel.</p>
+                <p>Another fact is that Singaporeans are stingy when it comes to money. Scratch that, I mean are "value-conscious"</p>
+                <p>So let me introduce to you "Tinder for Cheape Flights"!</p>
+                <p>Simply enter the destination and origin country and let the app find for you the cheapest flights across a certain date-range. This app integrates with the SkyScanner API to auto-suggest the best-fit city or country based on your input. It then fetches the cheapest flight available across date range of about one-month from now.</p>
+                <p>Once the country is shown, simply "swipe right" if you may consider the suggestion, or "swipe left" to totally ignore or remove the option.</p>
+                <p>Using a learning algorithm, the app will pick out better and cheaper flight recommendations</p>
+                <p>You will also receive notification via push notification, SMS or email once better flight deals appear</p>
+                <p>When you found the perfect match, simply click the "Buy now" and it will bring it over to SkyScanner to complete your purchase.</p>
+                <p>Thank you.</p>
             </div>
         </div>
     </div>
