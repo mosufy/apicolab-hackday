@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace APIcoLAB\Events;
 
 abstract class Event {
 

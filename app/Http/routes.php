@@ -11,11 +11,39 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+$siteRoute = function()
+{
+    Route::get('/', 'Site\HomeController@index');
+    Route::get('welcome', 'Site\WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+    Route::group(array('prefix' => 'flights'), function()
+    {
+        Route::get('', 'Site\FlightController@index');
+        Route::get('swipe-right/{id}', 'Site\FlightController@swipeRight');
+        Route::get('swipe-left/{id}', 'Site\FlightController@swipeLeft');
+    });
+};
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+$apiRoute = function()
+{
+    Route::group(array('prefix' => 'v1'), function()
+    {
+        Route::group(array('prefix' => 'service'), function()
+        {
+            Route::get('ping', 'Api\ServiceController@ping');
+        });
+
+        Route::group(array('prefix' => 'flights'), function()
+        {
+            Route::group(array('middleware' => 'csrf'), function()
+            {
+                Route::get('', 'Api\FlightController@index');
+            });
+        });
+    });
+};
+
+Route::group(array('domain' => 'apicolabhackday.dev'), $siteRoute);
+Route::group(array('domain' => 'apicolabhackday.mosufy.com'), $siteRoute);
+
+Route::group(array('domain' => 'api.apicolabhackday.dev'), $apiRoute);

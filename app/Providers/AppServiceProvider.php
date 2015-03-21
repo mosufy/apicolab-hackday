@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace APIcoLAB\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,8 +27,18 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'App\Services\Registrar'
+			'APIcoLAB\Services\Registrar'
 		);
+
+        $this->app->bind(
+            'APIcoLAB\Repositories\Flight\FlightRepository',
+            'APIcoLAB\Repositories\Flight\SkyScannerFlightRepository'
+        );
+
+        $this->app->bind(
+            'APIcoLAB\Repositories\Place\PlaceRepository',
+            'APIcoLAB\Repositories\Place\SkyScannerPlaceRepository'
+        );
 	}
 
 }
