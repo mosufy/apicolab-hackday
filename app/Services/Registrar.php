@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace APIcoLAB\Services;
 
-use App\User;
+use APIcoLAB\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

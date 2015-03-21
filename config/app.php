@@ -39,7 +39,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => env('APP_TIMEZONE', 'UTC'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -139,11 +139,11 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\BusServiceProvider',
-		'App\Providers\ConfigServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'APIcoLAB\Providers\AppServiceProvider',
+		'APIcoLAB\Providers\BusServiceProvider',
+		'APIcoLAB\Providers\ConfigServiceProvider',
+		'APIcoLAB\Providers\EventServiceProvider',
+		'APIcoLAB\Providers\RouteServiceProvider',
 
 	],
 

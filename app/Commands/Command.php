@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace APIcoLAB\Commands;
 
 abstract class Command {
 
