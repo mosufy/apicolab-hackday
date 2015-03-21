@@ -29,6 +29,16 @@ class AppServiceProvider extends ServiceProvider {
 			'Illuminate\Contracts\Auth\Registrar',
 			'APIcoLAB\Services\Registrar'
 		);
+
+        $this->app->bind(
+            'APIcoLAB\Repositories\Flight\FlightRepository',
+            'APIcoLAB\Repositories\Flight\SkyScannerFlightRepository'
+        );
+
+        $this->app->bind(
+            'APIcoLAB\Repositories\Place\PlaceRepository',
+            'APIcoLAB\Repositories\Place\SkyScannerPlaceRepository'
+        );
 	}
 
 }

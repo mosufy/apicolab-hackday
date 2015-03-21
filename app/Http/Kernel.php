@@ -14,8 +14,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\EncryptCookies',
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
-		'Illuminate\View\Middleware\ShareErrorsFromSession',
-		'APIcoLAB\Http\Middleware\VerifyCsrfToken',
+		'Illuminate\View\Middleware\ShareErrorsFromSession'
 	];
 
 	/**
@@ -27,6 +26,7 @@ class Kernel extends HttpKernel {
 		'auth' => 'APIcoLAB\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'APIcoLAB\Http\Middleware\RedirectIfAuthenticated',
+		'csrf' => 'APIcoLAB\Http\Middleware\VerifyCsrfToken',
 	];
 
 }

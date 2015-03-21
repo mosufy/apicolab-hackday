@@ -1,6 +1,5 @@
 <?php namespace APIcoLAB\Http\Controllers\Api;
 
-use APIcoLAB\Http\Controllers\Controller;
 use Carbon\Carbon;
 
 class ServiceController extends BaseController

@@ -11,18 +11,17 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
-
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
-
 $siteRoute = function()
 {
-    Route::get('/', 'Site\WelcomeController@index');
+    Route::get('/', 'Site\HomeController@index');
+    Route::get('welcome', 'Site\WelcomeController@index');
+
+    Route::group(array('prefix' => 'flights'), function()
+    {
+        Route::get('', 'Site\FlightController@index');
+        Route::get('swipe-right/{id}', 'Site\FlightController@swipeRight');
+        Route::get('swipe-left/{id}', 'Site\FlightController@swipeLeft');
+    });
 };
 
 $apiRoute = function()
@@ -36,7 +35,10 @@ $apiRoute = function()
 
         Route::group(array('prefix' => 'flights'), function()
         {
-            Route::get('', 'Api\FlightController@index');
+            Route::group(array('middleware' => 'csrf'), function()
+            {
+                Route::get('', 'Api\FlightController@index');
+            });
         });
     });
 };
