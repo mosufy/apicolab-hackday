@@ -8,6 +8,13 @@
 
     <title>{{ $pageTitle or 'API coLAB - Hack Day' }}</title>
 
+    <meta property="og:title" content="{{ $pageTitle or 'API coLAB - Hack Day' }}" />
+    <meta property="og:description" content="{{ $metaDescription or 'This is a concept app created during the API coLAB - Hack Day on 21 Mar 2015. This hack was produced within 6 hours to demonstrate the integration with SkyScanner API. Below is the 2-minute demonstration speech for reference.' }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ URL::to('/') }}" />
+    <meta property="og:image" content="{{ URL::to('/') }}/img/apicolab-hackday-tinderforcheaperflights@2x.jpg" />
+    <meta property="og:site_name" content="Tinder for Cheaper Flights" />
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link href="favicon.ico" rel="icon" type="image/ico">
 
