@@ -44,5 +44,6 @@ $apiRoute = function()
 };
 
 Route::group(array('domain' => 'apicolabhackday.dev'), $siteRoute);
+Route::group(array('domain' => 'apicolabhackday.mosufy.com'), $siteRoute);
 
 Route::group(array('domain' => 'api.apicolabhackday.dev'), $apiRoute);
