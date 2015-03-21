@@ -1,0 +1,6 @@
+/vendor
+/node_modules
+.env
+.vagrant
+Thumbs.db
+vagrant_env/.vagrant
