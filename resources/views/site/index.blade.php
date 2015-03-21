@@ -62,7 +62,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>This is concept app meant created during the API coLAB - Hack Day on 21 Mar 2015. This hack was produced within 6 hours to demonstrate the integration with SkyScanner API. Below is the 2-minute demonstration speech for reference.</p>
+                <p>This is a concept app created during the API coLAB - Hack Day on 21 Mar 2015. This hack was produced within 6 hours to demonstrate the integration with SkyScanner API. Below is the 2-minute demonstration speech for reference.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <p>"Anyone here uses Tinder?" I'm sure the rest of you are too shy to own up but it's all good. I myself an "not" using Tinder.</p>

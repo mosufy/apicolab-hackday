@@ -3,7 +3,7 @@
 
 # About
 
-This is concept app meant created during the API coLAB - Hack Day on 21 Mar 2015. This hack was produced within 6 hours to demonstrate the integration with SkyScanner API.
+This is a concept app created during the API coLAB - Hack Day on 21 Mar 2015. This hack was produced within 6 hours to demonstrate the integration with SkyScanner API.
 
 # Website
 
